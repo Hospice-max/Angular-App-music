@@ -1,0 +1,50 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item"><a class="page-link" routerLink="/albums">1</a></li>
+    <li class="page-item"><a class="page-link" routerLink="/pagination">2</a></li>
+    <li class="page-item">
+      <a class="page-link" routerLink="/pagination">➡</a>
+    </li>
+  </ul>
+</nav>
+<div class="search">
+  <input type="search" placeholder="Quel Album recherchez-vous ?">
+  <button>Rechercher</button>
+
+</div>
+<div class="h1">
+  <h1>Albums...</h1>
+</div>
+
+<div class="print">
+  <article *ngFor="let album of albums">
+    <h2><a routerLink="/albums/{{album.id}}">{{ album.id }}-{{ album.title }}</a></h2>
+    <p>{{ album.description }}</p>
+    <ul>
+      <li *ngFor="let tag of album.tags">
+        {{ tag }}
+      </li>
+    </ul>
+    <div class="basse">
+      <p class="btn" (click)="version()">en</p>
+      <p>❤{{ album.like }}</p>
+      <p>⏱{{ album.duration }}</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+        (click)="aside(album.id)">Details</button>
+
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Détails sur l'album.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <app-aside [index]='sidebar'></app-aside>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</div>

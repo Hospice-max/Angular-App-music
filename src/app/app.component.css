@@ -1,0 +1,25 @@
+.firstDiv {
+    border: 2px solid rgb(142, 34, 34);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 35pt;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(146, 28, 28);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    height: 50px;
+}

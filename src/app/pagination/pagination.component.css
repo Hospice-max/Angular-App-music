@@ -1,0 +1,17 @@
+article {
+    border: 2px solid black;
+    max-width: 100%;
+    width: 50%;
+    margin-bottom: 20pt;
+    border-radius: 10px;
+    background-color: white;
+}
+h2 {
+    text-align: center;
+}
+.print {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}

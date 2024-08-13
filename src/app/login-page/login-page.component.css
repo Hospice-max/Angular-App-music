@@ -1,0 +1,35 @@
+.back {
+    background-color: white;
+    max-width: 100%;
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.text {
+    padding: 15px;
+    margin-top: 8rem;
+}
+
+h1, p{
+    color: black;
+}
+label{
+    color: black;
+}
+button {
+    background-color: transparent;
+    border-color: black;
+}
+a {
+    color: black;
+    font-size: 20px;
+}
+.aaa {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+}

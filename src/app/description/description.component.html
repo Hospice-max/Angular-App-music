@@ -1,0 +1,19 @@
+<div>
+    <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" routerLink="/albums">Précédent</a>
+          </li>
+        </ul>
+      </nav>
+</div>
+<div class="describe">
+    <h1>Description de l'album.</h1>
+</div>
+<div class="madiv">
+    <img src="{{ album?.url }}" alt="image">
+    <p>{{ album?.description }}</p>
+    <p>Artiste: {{ album?.name }}</p>
+    <p>Référence: {{ album?.ref }}</p>
+    <p>Statut: {{ album?.status }}</p>
+</div>

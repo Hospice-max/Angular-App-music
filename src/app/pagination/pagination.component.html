@@ -1,0 +1,20 @@
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+        <li class="page-item">
+            <a class="page-link" routerLink="/albums">⬅</a>
+        </li>
+        <li class="page-item"><a class="page-link" routerLink="/albums">1</a></li>
+        <li class="page-item"><a class="page-link" routerLink="/pagination">2</a></li>
+    </ul>
+</nav>
+<div class="print">
+    <article *ngFor="let album of albums">
+        <h2><a routerLink="/albums/{{album.id}}">{{ album.id }}-{{ album.title }}</a></h2>
+        <p>{{ album.description }}</p>
+        <ul>
+            <li *ngFor="let tag of album.tags">
+                {{ tag }}
+            </li>
+        </ul>
+    </article>
+</div>
