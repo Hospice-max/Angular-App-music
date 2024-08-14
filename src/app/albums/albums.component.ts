@@ -11,7 +11,8 @@ import { ServiceService } from '../service.service';
 export class AlbumsComponent {
   albums = ALBUMS;
   userId!: string;
-  sidebar: Albums| undefined
+  sidebar: Albums| undefined;
+  keyword: string = ''
 
   constructor ( private service: ServiceService) {}
 
@@ -29,5 +30,9 @@ export class AlbumsComponent {
 
   version(): void {
     alert('French-Version 5.6')
+  }
+
+  search():void {
+    this.albums = ALBUMS.filter(el=> el.title.toLowerCase().includes(this.keyword.toLowerCase()))
   }
 }

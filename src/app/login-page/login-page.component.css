@@ -21,6 +21,7 @@ label{
 button {
     background-color: transparent;
     border-color: black;
+    color: black;
 }
 a {
     color: black;

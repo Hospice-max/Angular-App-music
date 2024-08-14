@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'albums/:id', component: DescriptionComponent },
   { path: 'login-page', component: LoginPageComponent },
   { path: 'register-page', component: RegisterPageComponent },
-  { path: 'pagination', component: PaginationComponent },
+  { path: 'next', component: PaginationComponent },
 ];
 
 @NgModule({

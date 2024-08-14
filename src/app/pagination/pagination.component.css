@@ -6,6 +6,15 @@ article {
     border-radius: 10px;
     background-color: white;
 }
+
+h1 {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
 h2 {
     text-align: center;
 }
@@ -15,3 +24,28 @@ h2 {
     justify-content: center;
     gap: 5%;
 }
+
+.btn {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 8px;
+    gap: 5px;
+}
+
+input{
+    max-width: 100%;
+    width: 40%;
+    padding: 8px;
+}
+.display {
+    display: flex;
+    gap: 5%;
+}
+

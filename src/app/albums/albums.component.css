@@ -57,7 +57,13 @@ input{
     border-radius: 10px;
     background-color: white;
 }
-
+.button{
+    margin-bottom: 1rem;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: transparent;
+    font-weight: bold;
+}
 .aside {
     max-width: 1024px;
 }
